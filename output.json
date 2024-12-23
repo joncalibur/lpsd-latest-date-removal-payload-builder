@@ -3,37 +3,37 @@
 	"products": {
 		"items": [
 			{
-				"licensed_product_id": "1234",
+				"licensed_product_id": 1234,
 				"service_dates": [
 					{
-						"service_date_id": "9999",
+						"service_date_id": 9999,
 						"action": "REMOVE"
 					}
 				]
 			},
 			{
-				"licensed_product_id": "5678",
+				"licensed_product_id": 5678,
 				"service_dates": [
 					{
-						"service_date_id": "8888",
+						"service_date_id": 8888,
 						"action": "REMOVE"
 					}
 				]
 			},
 			{
-				"licensed_product_id": "9012",
+				"licensed_product_id": 9012,
 				"service_dates": [
 					{
-						"service_date_id": "7777",
+						"service_date_id": 7777,
 						"action": "REMOVE"
 					}
 				]
 			},
 			{
-				"licensed_product_id": "3456",
+				"licensed_product_id": 3456,
 				"service_dates": [
 					{
-						"service_date_id": "6666",
+						"service_date_id": 6666,
 						"action": "REMOVE"
 					}
 				]

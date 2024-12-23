@@ -5,17 +5,18 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strconv"
 
 	"github.com/xuri/excelize/v2"
 )
 
 type ServiceDate struct {
-	ServiceDateID string `json:"service_date_id"`
+	ServiceDateID int    `json:"service_date_id"`
 	Action        string `json:"action"`
 }
 
 type Product struct {
-	LicensedProductID string        `json:"licensed_product_id"`
+	LicensedProductID int           `json:"licensed_product_id"`
 	ServiceDates      []ServiceDate `json:"service_dates"`
 }
 
@@ -27,8 +28,8 @@ type ProductData struct {
 }
 
 func main() {
-	excelFile := "/Users/Rohit/Personal Development/Learning/GO Lang/MathWorks-Utilities/Payload Builders/licensed-product-service-date-removal-payload-data.xlsx" // Path to your Excel file
-	sheetName := "ML-0000"                                                                                                                                         // Sheet name
+	excelFile := "/Users/Rohit/Personal Development/Learning/GO Lang/MathWorks-Utilities/lpsd-latest-date-removal-payload-builder/licensed-product-service-date-removal-payload-data.xlsx" // Path to your Excel file
+	sheetName := "ML-0000"                                                                                                                                                                 // Sheet name
 
 	// Open the Excel file
 	f, err := excelize.OpenFile(excelFile)
@@ -51,17 +52,27 @@ func main() {
 	data := ProductData{ID: 1234} // Set the ID as needed
 
 	// Skip the header row and process the data
-	for _, row := range rows[1:] {
+	for i, row := range rows[1:] {
 		if len(row) < 2 {
 			log.Println("Skipping row with insufficient columns")
 			continue
 		}
 
+		// Parse integers
+		licensedProductID, err := strconv.Atoi(row[0])
+		if err != nil {
+			log.Fatalf("Invalid licensed_product_id at row %d: %v", i+1, err)
+		}
+		serviceDateID, err := strconv.Atoi(row[1])
+		if err != nil {
+			log.Fatalf("Invalid licensed_product_service_date_id at row %d: %v", i+1, err)
+		}
+
 		product := Product{
-			LicensedProductID: row[0],
+			LicensedProductID: licensedProductID,
 			ServiceDates: []ServiceDate{
 				{
-					ServiceDateID: row[1],
+					ServiceDateID: serviceDateID,
 					Action:        "REMOVE",
 				},
 			},
