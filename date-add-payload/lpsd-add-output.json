@@ -1,0 +1,47 @@
+{
+	"id": 1234,
+	"products": {
+		"items": [
+			{
+				"id": 1234,
+				"serviceDates": [
+					{
+						"action": "ADD",
+						"startDate": "2020-01-01",
+						"endDate": "2020-12-31"
+					}
+				]
+			},
+			{
+				"id": 5678,
+				"serviceDates": [
+					{
+						"action": "ADD",
+						"startDate": "2021-01-02",
+						"endDate": "2021-12-31"
+					}
+				]
+			},
+			{
+				"id": 9012,
+				"serviceDates": [
+					{
+						"action": "ADD",
+						"startDate": "2022-01-03",
+						"endDate": "2022-12-31"
+					}
+				]
+			},
+			{
+				"id": 3456,
+				"serviceDates": [
+					{
+						"action": "ADD",
+						"startDate": "2023-01-04",
+						"endDate": "2023-12-31"
+					}
+				]
+			}
+		]
+	}
+}
