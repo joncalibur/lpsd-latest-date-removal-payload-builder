@@ -1,0 +1,37 @@
+{
+	"id": 30883639,
+	"products": {
+		"items": [
+			{
+				"id": 5777731,
+				"serviceDates": [
+					{
+						
+						"startDate": "2022-04-01",
+						"endDate": "2024-09-30"
+					}
+				]
+			},
+			{
+				"id": 6019534,
+				"serviceDates": [
+					{
+						
+						"startDate": "2022-04-01",
+						"endDate": "2024-09-30"
+					}
+				]
+			},
+			{
+				"id": 5862325,
+				"serviceDates": [
+					{
+						
+						"startDate": "2022-04-01",
+						"endDate": "2024-09-30"
+					}
+				]
+			}
+		]
+	}
+}

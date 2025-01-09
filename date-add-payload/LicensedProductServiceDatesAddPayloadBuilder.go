@@ -29,8 +29,8 @@ type ProductData struct {
 }
 
 func main() {
-	excelFile := "/Users/Rohit/Personal Development/Learning/GO Lang/MathWorks-Utilities/lpsd-latest-date-removal-payload-builder/date-add-payload/licensed-product-service-date-add-payload-data.xlsx" // Path to your Excel file
-	sheetName := "ML-0000"                                                                                                                                                                              // Sheet name
+	excelFile := "C:\\GITHUB\\personal\\lpsd-latest-date-removal-payload-builder\\date-add-payload/licensed-product-service-date-add-payload-data.xlsx" // Path to your Excel file
+	sheetName := "ML-0000"                                                                                                                              // Sheet name
 
 	// Open the Excel file
 	f, err := excelize.OpenFile(excelFile)

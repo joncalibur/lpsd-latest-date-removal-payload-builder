@@ -1,0 +1,27 @@
+{
+	"id": 1234,
+	"products": {
+		"items": [
+			{
+				"id": 7360092,
+				"serviceDates": [
+					{
+						
+						"startDate": "2022-02-01",
+						"endDate": "2024-09-30"
+					}
+				]
+			},
+			{
+				"id": 7360093,
+				"serviceDates": [
+					{
+						
+						"startDate": "2022-02-01",
+						"endDate": "2024-09-30"
+					}
+				]
+			}
+		]
+	}
+}

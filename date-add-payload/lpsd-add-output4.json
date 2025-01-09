@@ -1,0 +1,77 @@
+{
+	"id": 31066562,
+	"products": {
+		"items": [
+			{
+				"id": 4970788,
+				"serviceDates": [
+					{
+						
+						"startDate": "2022-02-01",
+						"endDate": "2024-09-30"
+					}
+				]
+			},
+			{
+				"id": 4973186,
+				"serviceDates": [
+					{
+						
+						"startDate": "2022-02-01",
+						"endDate": "2024-09-30"
+					}
+				]
+			},
+			{
+				"id": 6268857,
+				"serviceDates": [
+					{
+						
+						"startDate": "2022-02-01",
+						"endDate": "2024-09-30"
+					}
+				]
+			},
+			{
+				"id": 4662698,
+				"serviceDates": [
+					{
+						
+						"startDate": "2022-02-01",
+						"endDate": "2024-09-30"
+					}
+				]
+			},
+			{
+				"id": 6268485,
+				"serviceDates": [
+					{
+						
+						"startDate": "2022-02-01",
+						"endDate": "2024-09-30"
+					}
+				]
+			},
+			{
+				"id": 6373093,
+				"serviceDates": [
+					{
+						
+						"startDate": "2022-02-01",
+						"endDate": "2024-09-30"
+					}
+				]
+			},
+			{
+				"id": 8965574,
+				"serviceDates": [
+					{
+						
+						"startDate": "2022-02-01",
+						"endDate": "2024-09-30"
+					}
+				]
+			}
+		]
+	}
+}
